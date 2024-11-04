@@ -1,6 +1,6 @@
-import createHome from "./home";
-import createMenu from "./menu";
-import createContact from "./contact";
+import createHome from "./src/home";
+import createMenu from "./src/menu";
+import createContact from "./src/contact";
 import "./style.css";
 
 function initializeWebsite() {
