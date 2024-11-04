@@ -1,3 +1,12 @@
+/* Variables */
+:root {
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --accent-color: #e74c3c;
+  --background-color: #ecf0f1;
+  --text-color: #2c3e50;
+}
+
 /* Reset default browser styles */
 * {
   margin: 0;
@@ -7,13 +16,13 @@
 
 /* General Styles */
 body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
-  color: #333;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
 }
 
 header {
-  background-color: #333;
+  background-color: var(--primary-color);
   padding: 1rem;
 }
 
@@ -34,12 +43,12 @@ nav button {
 }
 
 nav button:hover {
-  background-color: #444;
+  background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
 }
 
 nav button.active {
-  background-color: #555;
+  background-color: var(--secondary-color);
   border-radius: 5px;
 }
 
@@ -52,6 +61,7 @@ nav button.active {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  color: var(--primary-color);
 }
 
 p {
@@ -64,6 +74,7 @@ p {
   height: auto;
   margin: 1rem 0;
   border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Menu Styles */
@@ -73,12 +84,32 @@ p {
 }
 
 .menu li {
-  background-color: #fff;
+  background-color: white;
   margin: 0.5rem 0;
   padding: 0.75rem;
   border: 1px solid #ddd;
   font-size: 1.1rem;
   border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li .item-name {
+  font-weight: bold;
+}
+
+.menu li .item-price {
+  color: var(--accent-color);
+}
+
+/* Contact Styles */
+.contact p {
+  margin: 0.5rem 0;
+}
+
+.contact h2 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
 }
 
 /* Responsive Design */
